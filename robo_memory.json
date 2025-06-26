@@ -1,0 +1,20 @@
+{
+  "preferences": {
+    "language": "Python",
+    "ide": "PyCharm",
+    "style": "clear, documented, reusable"
+  },
+  "projects": {
+    "trading_bot": {
+      "status": "active",
+      "notes": [
+        "Uses Binance API",
+        "Needs backtesting feature",
+        "Implement machine learning for signal generation"
+      ]
+    }
+  },
+  "interests": ["science"],
+  "reminders": [],
+  "history":[]
+}
