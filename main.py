@@ -9,8 +9,12 @@ MEMORY_FILE = 'robo_memory.json'
 def load_memory():
     if not os.path.exists(MEMORY_FILE):
         return {}
-    with open(MEMORY_FILE, 'r') as f:
-        return json.load(f)
+    try:    
+        with open(MEMORY_FILE, 'r') as f:
+            return json.load(f)
+    except Exception as e:
+        print("Error loading memory:", e)
+        return {"error": "Invalid JSON format or read failure"}
 
 def save_memory(data):
     with open(MEMORY_FILE, 'w') as f:
